@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>BlackJack Trainer</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<h1>BlackJack Count Trainer</h1>
+			<div class="form">
+				<form action="#">
+					<label for="deckCount">Number of Decks:</label>
+					<select name="decks" id="deckCount">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+					</select>
+					<input id="submit" type="submit" value="Submit" />
+				</form>
+			</div>
+		</header>
+
+		<section class="cards">
+			<div class="pile">
+				<img src="assets/backCard.png" height="300" alt="">
+				<p id="remaining"></p>
+			</div>
+
+			<div class="discard">
+				<img src="assets/backCard.png" height="300" alt="" id="currentCard">
+				<button type="button" id="nextCard">Next Card</button>
+				<button type="button" id="autoDealS">Auto Deal -Slow</button>
+				<button type="button" id="autoDealM">Auto Deal -Med</button>
+				<button type="button" id="autoDealF">Auto Deal -Fast</button>
+			</div>
+		</section>
+		<section>
+			<div class="count">
+				<h2 id="count">Count: </h2>
+				<h4 id="countNum" class="hidden"> </h4>
+			</div>
+		</section>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

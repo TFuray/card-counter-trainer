@@ -1,0 +1,130 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     background-color: darkgreen;
+}
+
+.hidden {
+     display: none;
+}
+
+body{
+     margin: 0 30px;
+     text-align: center;
+}
+
+div {
+     display: flex;
+}
+input {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0 auto;
+   }
+
+label {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0 auto;
+   }
+
+div.form {
+     align-items: center;
+     justify-content: center;
+     margin: 2% 0 5% 0;
+}
+
+select {
+     margin-bottom: 10px;
+     margin-top: 10px;
+   }
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+section.cards{
+     display: flex;
+     justify-content: center;
+     align-items: baseline;
+     
+     
+}
+.discard {
+     flex-direction: column;
+     align-items: center;
+     
+}
+.pile {
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+}
+
+.pile, .discard{
+     display: flex;
+     flex-basis: 10%;
+}
+
+#remaining {
+     display: flex;
+     align-items: center;
+     font-size: 3em;
+     margin-top: 0px;
+     font-weight: 600;
+     color: rgb(194, 9, 9);
+     text-shadow: 2px 2px 2px black;
+}
+
+#nextCard {
+     margin-bottom: 10px;
+     margin-top: 10px;
+     
+}
+div.count {
+     justify-content: center;
+}
+h2#count {
+     font-size: 1.5rem;
+     margin-top: 0px;
+     margin-bottom: 0;
+     margin-right: 8px;
+     
+     
+}
+h4#countNum {
+     font-size: 1.5rem;
+     margin-top: 0px;
+}
+
+#count:hover + #countNum {
+     display: block;
+
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
