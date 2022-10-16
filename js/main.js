@@ -39,12 +39,12 @@ function nextCard() {
             cardVal = convertToNum(cardVal)
             keepCount(cardVal)
             document.querySelector('h4').innerText = " " + ` ${count}`
-            
-            if(cardsRemaining == 0){
+
+            if (cardsRemaining == 0) {
                 clearInterval(intervalID)
                 shuffle()
                 document.querySelector('#currentCard').src = 'assets/backCard.png'
-                    
+
             }
 
         })
@@ -52,14 +52,6 @@ function nextCard() {
             console.log(`error ${err}`)
         })
 }
-
-// function autoDeal(speed) {
-//     if(speed == 'slow'){
-//         while (cardsRemaining > 0){
-
-//         }
-//     }
-// }
 
 function keepCount(val) {
 
@@ -88,12 +80,10 @@ function convertToNum(val) {
 
 shuffle()
 
-// document.querySelector('#submit').addEventListener('click', shuffle)
-
 document.querySelector('#nextCard').addEventListener('click', nextCard)
 
 slowBtn.addEventListener("click", function () {
-    intervalID = setInterval(function() {
+    intervalID = setInterval(function () {
         nextCard()
     }, 1000)
 })
@@ -101,11 +91,11 @@ slowBtn.addEventListener("click", function () {
 medBtn.addEventListener("click", function () {
     intervalID = setInterval(function () {
         nextCard()
-    }, 600)
+    }, 650)
 })
 
 fastBtn.addEventListener("click", function () {
     intervalID = setInterval(function () {
         nextCard()
-    }, 350)
+    }, 450)
 })

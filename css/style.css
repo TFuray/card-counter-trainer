@@ -22,9 +22,7 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
-     background-color: darkgreen;
-}
+
 
 .hidden {
      display: none;
@@ -33,6 +31,8 @@ body {
 body{
      margin: 0 30px;
      text-align: center;
+     color: rgb(224, 224, 224);
+     text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
 div {
@@ -145,27 +145,6 @@ h4#countNum {
 /* ADDITIONAL STYLES
 /*******************************************/
 
-/* .btn {
-	 box-sizing: border-box;
-	 appearance: none;
-	 background-color: transparent;
-	 border: 2px solid #e74c3c;
-	 border-radius: 0.6em;
-	 color: #e74c3c;
-	 cursor: pointer;
-	 display: flex;
-	 align-self: center;
-	 font-size: 1rem;
-	 font-weight: 400;
-	 line-height: 1;
-	 margin: 20px;
-	 padding: 1.2em 2.8em;
-	 text-decoration: none;
-	 text-align: center;
-	 text-transform: uppercase;
-	 font-family: 'Montserrat', sans-serif;
-	 font-weight: 700;
-} */
  .btn .first {
 	 transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 }

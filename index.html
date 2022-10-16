@@ -11,25 +11,14 @@
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"> 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/background.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/button.css">
 	</head>
 	<body>
 		<header>
 			<h1>BlackJack Count Trainer</h1>
 			<p class="intro">Click through the deck at your own pace with "Next Card" or have the cards dealt automatically and at the speed of your choice by clicking either "Auto Deal- Slow" "Auto Deal- Med" or "Auto Deal- Fast". <br> The cards will shuffle and reset each time they hit zero. If you followed the count correctly it should be at zero. At any time you can take a peek at the current count by hovering your mouse over "Count:"</p>
-			<!-- <div class="form">
-				<form action="#">
-					<label for="deckCount">Number of Decks:</label>
-					<select name="decks" id="deckCount">
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-						<option value="6">6</option>
-					</select>
-					<input id="submit" type="submit" value="Submit" />
-				</form> -->
 			</div>
 		</header>
 
@@ -45,10 +34,10 @@
 
 			<div class="discard box">
 				<img src="assets/backCard.png" height="300" alt="" id="currentCard">
-				<button type="button" class="first btn" id="nextCard">Next Card</button>
-				<button type="button" class="first btn" id="slow">Auto Deal -Slow</button>
-				<button type="button" class="first btn" id="med">Auto Deal -Med</button>
-				<button type="button" class="first btn" id="fast">Auto Deal -Fast</button>
+				<button type="button" class="learn-more" id="nextCard">Next Card</button>
+				<button type="button" class="learn-more" id="slow">Auto Deal -Slow</button>
+				<button type="button" class="learn-more" id="med">Auto Deal -Med</button>
+				<button type="button" class="learn-more" id="fast">Auto Deal -Fast</button>
 			</div>
 		</section>
 
