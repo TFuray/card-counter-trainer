@@ -152,3 +152,10 @@ h4#countNum {
 	 box-shadow: 0 0 40px 40px #e74c3c inset;
 }
  
+
+
+@media all and (max-width: 880px) {
+  p.intro{
+     width: 90%;
+  }
+}
